@@ -66,6 +66,7 @@ export default function Cards() {
                 ps={card.ps} onClickPrev={handlePrev} image={card.image} linkDePago={card.linkDePago}/>)
         })}
         {
+            activeStep !== 0 && activeStep !== array.length - 1 &&
             array.map((card, index) => {
                 return (card.isRSVP ? null : activeStep === index && <Card header={card.header} message={card.message}
                     ps={card.ps} onClickNext={handleNext} onClickPrev={handlePrev} image={card.image} linkDePago={card.linkDePago}/>)
