@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #282c34;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .App-logo {
