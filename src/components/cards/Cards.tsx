@@ -58,16 +58,16 @@ export default function Cards() {
             header={card.header} message={card.message} image={card.image}/>)
         })}
         {activeStep === 0 && array.map((card, index) => {
-            return (activeStep === index && <Card header={card.header} message={card.message}
+            return (card.isRSVP ? null : activeStep === index && <Card header={card.header} message={card.message}
                 ps={card.ps} onClickNext={handleNext} image={card.image} linkDePago={card.linkDePago}/>)
         })}
         {activeStep === array.length - 1 && array.map((card, index) => {
-            return (activeStep === index && <Card header={card.header} message={card.message}
+            return (card.isRSVP ? null : activeStep === index && <Card header={card.header} message={card.message}
                 ps={card.ps} onClickPrev={handlePrev} image={card.image} linkDePago={card.linkDePago}/>)
         })}
         {
             array.map((card, index) => {
-                return (activeStep === index && <Card header={card.header} message={card.message}
+                return (card.isRSVP ? null : activeStep === index && <Card header={card.header} message={card.message}
                     ps={card.ps} onClickNext={handleNext} onClickPrev={handlePrev} image={card.image} linkDePago={card.linkDePago}/>)
             })
         }
