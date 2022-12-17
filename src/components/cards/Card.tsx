@@ -36,7 +36,7 @@ export default function BasicCard(props: Props) {
   return (
     <ThemeProvider theme={theme}>
     <StyledContainer sx={{ backgroundImage: `url(${image})` }}>
-      <StyledCard sx={{ minWidth: 500, maxWidth: 500 }} elevation={24}>
+      <StyledCard sx={{ maxWidth: 500 }} elevation={24}>
         <CardMedia
           component="img"
           height="150"
