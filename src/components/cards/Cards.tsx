@@ -6,31 +6,31 @@ import Form from './Form'
 const array = [{
     header: 'Save The Date',
     message: '¡Estamos muy emocionados por que sean parte de un día tan especial en nuestras vidas!',
-    image: '/images/save-the-date-1.jpg'
+    image: '/Save-the-Date/images/save-the-date-1.JPG'
 },
 {
     header: 'Gift Giving',
     message: 'Poder verlos a todos este día es el mejor regalo que nos pueden dar. Sin embargo, si desean obsequiarnos un regalo de bodas adicional, agradecemos que sea una contribución monetaria ya que vivimos en el extranjero! ',
     ps: 'Si desean hacerlo, pueden hacerlo a través de este',
     linkDePago: 'https://paypal.me/demianysabrina',
-    image: '/images/save-the-date-2.jpg'
+    image: '/Save-the-Date/images/save-the-date-2.jpg'
 },
 {
     header: 'This is an UNPLUGGED wedding!',
     message: 'Para nosotros es muy importante disfrutar el momento, por lo que pedimos que en la ceremonia, entrada de la novia y First Dance, ¡NO utilicemos celulares! Queremos que vivas el momento con nosotros y no a través de tu lente.',
     ps: 'Habrán muchos fotógrafos ese día y compartiremos las fotos con todos!',
-    image: '/images/save-the-date-4.jpg'
+    image: '/Save-the-Date/images/save-the-date-4.jpg'
 },
 {
     header: 'Y el paso más importante... ¡Tu RSVP!',
     message: '¡Por favor haznos saber si contamos con tu presencia ese día!',
     isRSVP: true,
-    image: '/images/save-the-date-ultima.jpg'
+    image: '/Save-the-Date/images/save-the-date-ultima.jpg'
 },
 {
     header: '¡Nos vemos el 11 de febrero!',
     message: 'See you at the altar!',
-    image: '/images/save-the-date-6.jpg'
+    image: '/Save-the-Date/images/save-the-date-6.jpg'
 }]
 
 export default function Cards() {

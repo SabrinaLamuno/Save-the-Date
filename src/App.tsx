@@ -7,6 +7,8 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import '@fontsource/corinthia/400.css';
 import '@fontsource/corinthia/700.css';
+import '@fontsource/bodoni-moda/400.css';
+import '@fontsource/bodoni-moda/700.css';
 
 import Cards from './components/cards/Cards';
 

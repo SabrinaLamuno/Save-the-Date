@@ -5,10 +5,11 @@ import {
     Button,
     CardActions,
     Typography,
-    InputLabel
+    InputLabel,
+    createTheme
 } from "@mui/material"
 import styled from '@emotion/styled'
-import { keyframes } from '@emotion/react';
+import { keyframes, ThemeProvider } from '@emotion/react';
 import handleSubmit from '../../formHandles'
 
 interface Props {
@@ -18,6 +19,16 @@ interface Props {
     onSubmit: any;
     image?: string;
 }
+
+const theme = createTheme({
+    typography: {
+      fontFamily: [
+        'Bodoni Moda',
+        'serif',
+      ].join(','),
+    },
+  });
+  
 
 export default function Form(props: Props) {
     const [formName, setFormName] = useState("")
@@ -62,6 +73,7 @@ export default function Form(props: Props) {
     }
 
     return (
+        <ThemeProvider theme={theme}>
         <Container sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', minWidth: '100vw', backgroundImage: `url(${image})` }}>
             <StyledCard sx={{ minWidth: '35vw', minHeight: '35vh' }}>
                 <CardHeader title="RSVP" />
@@ -111,6 +123,7 @@ export default function Form(props: Props) {
                 </CardContent>
             </StyledCard>
         </Container>
+        </ThemeProvider>
     )
 }
 

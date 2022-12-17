@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+
 .App {
+  font-family: 'Bodoni Moda', serif;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -14,6 +17,7 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
+  font-family: 'Bodoni Moda', serif;
 }
 
 .App-logo {

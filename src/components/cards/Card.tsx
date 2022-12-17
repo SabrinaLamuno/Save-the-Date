@@ -8,7 +8,7 @@ import { Container } from '@mui/system';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
 
-import { Box, CardMedia } from '@mui/material';
+import { Box, CardMedia, createTheme, ThemeProvider } from '@mui/material';
 
 
 interface Props {
@@ -22,9 +22,19 @@ interface Props {
   linkDePago?: string;
 }
 
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Bodoni Moda',
+      'serif',
+    ].join(','),
+  },
+});
+
 export default function BasicCard(props: Props) {
   const { header, message, ps, onClickNext, onClickPrev, image, linkDePago } = props
   return (
+    <ThemeProvider theme={theme}>
     <StyledContainer sx={{ backgroundImage: `url(${image})` }}>
       <StyledCard sx={{ minWidth: 500, maxWidth: 500 }} elevation={24}>
         <CardMedia
@@ -50,6 +60,7 @@ export default function BasicCard(props: Props) {
         </ButtonContainer>
       </StyledCard>
     </StyledContainer>
+    </ThemeProvider>
   );
 }
 
@@ -88,7 +99,8 @@ const StyledContainer = styled(Container)(({ theme }) => ({
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
-  position: 'relative'
+  position: 'relative',
+  fontFamily: 'Corinthia, serif',
 }));
 
 const StyledLink = styled('a')(({ theme }) => ({
