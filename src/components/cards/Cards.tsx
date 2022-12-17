@@ -13,13 +13,13 @@ const array = [{
     message: 'Poder verlos a todos este día es el mejor regalo que nos pueden dar. Sin embargo, si desean obsequiarnos un regalo de bodas adicional, agradecemos que sea una contribución monetaria ya que vivimos en el extranjero! ',
     ps: 'Si desean hacerlo, pueden hacerlo a través de este',
     linkDePago: 'https://paypal.me/demianysabrina',
-    image: '/Save-the-Date/images/save-the-date-2.jpg'
+    image: '/Save-the-Date/images/save-the-date-2.JPG'
 },
 {
     header: 'This is an UNPLUGGED wedding!',
     message: 'Para nosotros es muy importante disfrutar el momento, por lo que pedimos que en la ceremonia, entrada de la novia y First Dance, ¡NO utilicemos celulares! Queremos que vivas el momento con nosotros y no a través de tu lente.',
     ps: 'Habrán muchos fotógrafos ese día y compartiremos las fotos con todos!',
-    image: '/Save-the-Date/images/save-the-date-4.jpg'
+    image: '/Save-the-Date/images/save-the-date-4.JPG'
 },
 {
     header: 'Y el paso más importante... ¡Tu RSVP!',
