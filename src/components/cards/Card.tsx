@@ -94,6 +94,7 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 const StyledLink = styled('a')(({ theme }) => ({
   backgroundColor: 'white',
   color: '#282c34',
+  fontWeight: 'bold',
   '&:hover': {
     backgroundColor: 'rgba(40, 44, 52, 0.15)',
   }

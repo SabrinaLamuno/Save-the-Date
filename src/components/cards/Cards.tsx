@@ -25,11 +25,11 @@ const array = [{
     header: 'Y el paso más importante... ¡Tu RSVP!',
     message: '¡Por favor haznos saber si contamos con tu presencia ese día!',
     isRSVP: true,
-    image: '/images/save-the-date-3.jpg'
+    image: '/images/save-the-date-ultima.jpg'
 },
 {
-    header: 'See you at the altar!',
-    message: '¡Nos vemos el 11 de febrero!',
+    header: '¡Nos vemos el 11 de febrero!',
+    message: 'See you at the altar!',
     image: '/images/save-the-date-6.jpg'
 }]
 

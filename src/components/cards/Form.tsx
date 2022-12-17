@@ -82,7 +82,7 @@ export default function Form(props: Props) {
                         <FormControl component="fieldset">
                             <FormLabel component="legend">Are you coming?</FormLabel>
                             <StyledRadioGroup aria-label="rsvp" name="rsvp" value={rsvp} onChange={handleRsvpChange}>
-                                <FormControlLabel value="yes" control={<Radio />} label="Yes" />
+                                <FormControlLabel value="yes" control={<Radio />} label="Si" />
                                 <FormControlLabel value="no" control={<Radio />} label="No" />
                             </StyledRadioGroup>
                         </FormControl>
@@ -105,8 +105,8 @@ export default function Form(props: Props) {
                         </Select>
                     </FormContainer>
                     <ButtonContainer>
-                        <StyledButton onClick={onClickPrev}>Back</StyledButton>
-                        <StyledButton onClick={handleSubmitClick} disabled={!formReady}>Submit</StyledButton>
+                        <StyledButton onClick={onClickPrev}>Regresar</StyledButton>
+                        <StyledButton onClick={handleSubmitClick} disabled={!formReady}>Siguiente</StyledButton>
                     </ButtonContainer>
                 </CardContent>
             </StyledCard>
